@@ -1,0 +1,12 @@
+<p>
+  demo14-chatroom works!
+</p>
+<!-- 父组件在调用子组件时，先在子组件上绑定事件 -->
+
+<app-demo14-input uName="zhangsan" (myEvent)='handleMyEvent($event)'></app-demo14-input>
+<!-- props down -->
+<!-- 1. 通过子组件属性传递值 -->
+<!-- 2@input的方式接收到值 -->
+<ul>
+  <li *ngFor="let item of myTodo">{{item}}</li>
+</ul>

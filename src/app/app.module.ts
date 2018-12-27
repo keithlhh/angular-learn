@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { Demo01Component } from './demo01/demo01.component';
@@ -23,6 +24,11 @@ import { Demo12ListComponent } from './demo12-list/demo12-list.component';
 import { Demo12ItemComponent } from './demo12-item/demo12-item.component';
 import { Demo13HeaderComponent } from './demo13-header/demo13-header.component';
 import { Demo13CartComponent } from './demo13-cart/demo13-cart.component';
+import { Demo14ChatroomComponent } from './demo14-chatroom/demo14-chatroom.component';
+import { Demo14InputComponent } from './demo14-input/demo14-input.component';
+import { Demo15HttpComponent } from './demo15-http/demo15-http.component';
+import { Demo16LianxiComponent } from './demo16-lianxi/demo16-lianxi.component';
+import { Demo17ServiceComponent } from './demo17-service/demo17-service.component';
 
 @NgModule({
   declarations: [
@@ -46,9 +52,15 @@ import { Demo13CartComponent } from './demo13-cart/demo13-cart.component';
     Demo12ListComponent,
     Demo12ItemComponent,
     Demo13HeaderComponent,
-    Demo13CartComponent
+    Demo13CartComponent,
+    Demo14ChatroomComponent,
+    Demo14InputComponent,
+    Demo15HttpComponent,
+    Demo16LianxiComponent,
+    Demo17ServiceComponent
   ],
   imports: [
+    HttpClientModule,//网络请求 
     FormsModule,
     BrowserModule
   ],
