@@ -1,0 +1,24 @@
+<p>
+  demo10-pipe works!
+</p>
+<!-- 调用自定义的管道类，来实现性别的转换 
+  true为args
+ 
+-->
+
+<h2>{{ 1 | sexChange:true}}</h2>
+<!-- 内置管道
+  内置过滤器
+-->
+<h2>{{"John" | uppercase}}</h2>
+<h2>{{"John" | lowercase}}</h2>
+<h2>{{150 | currency:'CNY'}}</h2>
+<!-- CNY国际货币符号 -->
+<h2>{{3.1415926 | number:'2.4'}}</h2>
+<!-- slice:start:end -->
+<!-- 从第二个开始到第三截止 -->
+<h2>{{[100,200,300,400] | slice:2:3}}</h2>
+<!-- 测试开发 -->
+<h2>{{stu | json}}</h2>
+<!-- percent百分比设置 -->
+<h2>{{0.34 | percent}}</h2>

@@ -1,0 +1,24 @@
+<p>
+  demo05-bindings works!
+</p>
+<!-- 事件绑定
+vue :<button @click>
+  veu <button v-on
+-->
+<!-- {{}}(eventName) -->
+<button (click)='handleClick()'>clickMe</button>
+<!-- 属性绑定
+  v-bind:href='myurl'
+  a :href='myUrl'
+-->
+<!-- a : -->
+<a href="http://www.baidu.com">baidu</a>
+<a [href]="myUrl">百度</a>
+
+<!-- 双向数据绑定
+  主要用于表单元素
+  1 models -> view
+  2 view -> models 将表单元素操作的结果 绑定某一个模型数据
+-->
+<input type="text" [(ngModel)]="myName">
+<h2>{{myName}}</h2>

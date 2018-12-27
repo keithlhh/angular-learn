@@ -1,0 +1,17 @@
+<!-- 动态样式的绑定 -->
+<p [ngStyle]="{color: myColor}">
+  demo07-style works!
+</p>
+<!-- 动态样式类的绑定 -->
+<h2 [ngClass]="{myBlue: true}">hello world</h2>
+
+<!-- 多重条件判断 指令-->
+<div [ngSwitch]="answer">
+  <div *ngSwitchCase="'a'">outputA</div>
+  <div *ngSwitchCase="'b'">outputB</div>
+  <div *ngSwitchCase="'b'">outputC</div>
+  <div *ngSwitchCase="'c'">outputD</div>
+  <div *ngSwitchDefault>请输入正确的答案</div>
+</div>
+
+<!-- 自定义指令类 -->

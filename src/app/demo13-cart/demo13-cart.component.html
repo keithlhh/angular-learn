@@ -1,0 +1,15 @@
+<p>
+  demo13-cart works!
+  这里是父组件
+</p>
+<!-- 
+1.子组件绑定事件处理函数
+
+ -->
+<app-demo13-header (myEvent)='handleMyEvent($event)'></app-demo13-header>
+
+<ul *ngIf="isShow">
+  <li>商品1</li>
+  <li>商品2</li>
+  <li>商品3</li>
+</ul>
